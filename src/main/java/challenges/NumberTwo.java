@@ -23,6 +23,34 @@ public class NumberTwo {
      */
     public boolean evenlySpaced(int a, int b, int c){
         // Delete the line below and implement the method!
-        throw new UnsupportedOperationException();
+        int [] numbers = new int[4];
+        numbers[0] = a;
+        numbers[1] = b;
+        numbers[3] = c;
+        int max = a;
+        int min = a;
+        int middle =a;
+        for(int i = 0; i<numbers.length; i++){
+            if(numbers[i] >max) {
+                max = numbers[i];
+            }}
+        for(int j = 0; j<numbers.length; j++)   {
+            if(numbers[j] <min){
+                min = numbers[j];
+            }
+        }
+        if(a !=max && a != min)  {
+            middle = a;
+        }
+        if(b !=max && b!=min){
+            middle = b;
+        }
+        if(c!=max && c!=min){
+            middle = c;
+        }
+        if((max - middle == middle-min))
+            return true;
+        else
+            return false;
     }
 }
