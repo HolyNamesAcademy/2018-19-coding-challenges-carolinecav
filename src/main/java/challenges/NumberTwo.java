@@ -23,10 +23,10 @@ public class NumberTwo {
      */
     public boolean evenlySpaced(int a, int b, int c){
         // Delete the line below and implement the method!
-        int [] numbers = new int[4];
+        int [] numbers = new int[3];
         numbers[0] = a;
         numbers[1] = b;
-        numbers[3] = c;
+        numbers[2] = c;
         int max = a;
         int min = a;
         int middle =a;
@@ -48,7 +48,7 @@ public class NumberTwo {
         if(c!=max && c!=min){
             middle = c;
         }
-        if((max - middle == middle-min))
+        if((Math.abs(max - middle) == Math.abs(middle-min)))
             return true;
         else
             return false;
